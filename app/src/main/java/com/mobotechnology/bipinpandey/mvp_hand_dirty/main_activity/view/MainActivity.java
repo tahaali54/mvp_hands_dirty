@@ -74,8 +74,9 @@ public class MainActivity extends AppCompatActivity implements MainActivityPrese
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleSmall);
         progressBar.setIndeterminate(true);
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(Resources.getSystem().getDisplayMetrics().widthPixels,
-                250);
+                60);
         params.addRule(RelativeLayout.CENTER_IN_PARENT);
+        params.setMargins(0,250,0,0);
         this.addContentView(progressBar, params);
         showProgressBar();
     }

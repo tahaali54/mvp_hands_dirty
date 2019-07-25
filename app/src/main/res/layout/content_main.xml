@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:minHeight="50dp"
         android:textSize="20sp"
-        android:text="@string/app_name"
+        android:text="Awaiting input..."
         android:gravity="center"/>
 
     <LinearLayout
@@ -30,12 +30,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:imeOptions="actionDone"
+            android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:imeOptions="actionDone"
+            android:inputType="text"
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
